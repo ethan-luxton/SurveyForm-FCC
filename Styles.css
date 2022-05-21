@@ -1,0 +1,100 @@
+/*
+Herein lies code used for a certification challenge on https://freecodecamp.org.
+Please do not use this code for personal gain or benefit on their website.
+This is only intended to show my previous work and serve as reference for future projects.
+*/
+
+html {
+    background: url(https://i.imgur.com/S3GsY5X.jpg) no-repeat center fixed;
+    background-size: cover;
+    display: table;
+    margin: auto;
+}
+html, body {
+    height: 100%;
+}
+h1 {
+    padding-top: 25px;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+.thank-you {
+    font-size: medium;
+    font-family: sans-serif;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+form {
+    vertical-align: center;
+    height: 13in;
+    width: 7in;
+    background: linear-gradient(to top, rgba(7, 8, 5, 0.74),rgb(81, 131, 189)); 
+    color: white;
+    border-radius: 25px;
+}
+.name-label, .email-label, .number-label {
+    font-size: medium;
+    font: 1rem 'Fira Sans', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+label {
+    font: 1rem 'Fira Sans', sans-serif;
+    display: block;
+	padding-left: 15px;
+	text-indent: -15px;
+    font-size: 17px;    
+}
+
+.input-radio,
+.input-checkbox {
+    width: 13px;
+	height: 13px;
+	padding: 0;
+	margin: 0;
+	vertical-align: bottom;
+	position: relative;
+	top: -4px;
+}
+.form-group {
+    text-align: left;
+    padding-left: 5%;
+}
+.form-control {
+    text-align: left;
+    padding-left: 5%;
+    width: 4in;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.submit-button {
+    padding-top: 20px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.input-textarea {
+    width: 400px;
+    height: 120px;
+    max-width: 400px;
+    max-height: 120px;
+}
+.submit{
+    width: 4in;
+    height: 30px;
+    color: white;
+    background-color: green;
+    border: none;
+    font-family: sans-serif;
+    font-size: medium;
+    border-radius: 25px;
+}
