@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+Herein lies code used for a certification challenge on https://freecodecamp.org.
+Please do not use this code for personal gain or benefit on their website.
+This is only intended to show my previous work and serve as reference for future projects.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <main>
+        <body>
+            <h1 id="title" class="title">Survey Form</h1>
+            <p id="description" class="thank-you">Thank you for taking the time to help us improve our platform</p>
+            <form  id="survey-form" class="survey-form">
+                <div class="form-group">
+                    <label for="name" id="name-label" class="name-label">Name</label>
+                    <input type="text" 
+                        name="name" 
+                        id="name" 
+                        class="form-control" 
+                        placeholder="Enter your name" 
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label" class="email-label">Email</label>
+                    <input type="email" 
+                        name="email" 
+                        id="email" 
+                        class="form-control" 
+                        placeholder="Enter your email" 
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="number" id="number-label" class="number-label">Age (optional)</label>
+                    <input type="number" 
+                        name="age" 
+                        id="number" 
+                        class="form-control"
+                        min="18"
+                        max="99"
+                        placeholder="Age">
+                </div>
+                <div class="form-group">
+                    <p class="role">Which option best describes your current role?</p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="full-time-student">Full time student</option>
+                    <option value="employed-part-time">Employed part-time</option>
+                    <option value="employed-full-time">Employed full-time</option>
+                    <option value="prefer-not-to-say">Prefer not to say</option>
+                    <option value="other">Other</option>
+                    </select>
+                </div>  
+                <div class="form-group">
+                    <p class="recommend">Would you recommend (insert site name) to a friend?</p>   
+                    <div>
+                        <label for="recommend"><input type ="radio" class="input-radio" value="recommend" name="user-recommend" checked> Would recommend</label>
+                    </div>
+                    <div>
+                        <label for="maybe"><input type ="radio" class="input-radio" value="maybe" name="user-recommend"> Maybe</label>
+                    </div>
+                    <div>
+                        <label for="not-sure"><input type ="radio" class="input-radio" value="not-sure" name="user-recommend"> Not sure</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <p class="feature">What is your favorite feature of (insert site name)?</p>
+                    <select id="dropdown2" name="features" class="form-control" required>
+                    <option disabled selected value>Select a feature</option>
+                    <option value="game-development">Game development tutorials</option>
+                    <option value="easter-eggs">Easter eggs</option>
+                    <option value="spotify">Spotify web integration</option>
+                    <option value="prefer-not-to-say">Prefer not to say</option>
+                    </select>
+                </div>                 
+                <div class="form-group">
+                    <p class="improve">What would you like to see improved? <span class="clue">(Check all that apply)</span></p>
+                    <label for="site-capabilities"><input type="checkbox" id="check1" value="site-capabilities" name="improve" class="input-checkbox"> Site Capabilities</label>
+                    <label for="user-interactivity"><input type="checkbox" id="check2" value="user-interactivity" name="improve" class="input-checkbox"> User Interactivity</label>
+                    <label for="game-development"><input type="checkbox" id="check3" value="game-development" name="improve" class="input-checkbox"> Game Development</label>
+                    <label for="survey-form"><input type="checkbox" id="check4" value="survey-form" name="improve" class="input-checkbox"> Our survey form</label>
+                </div>  
+                <div class="form-group">
+                    <p class="comments">Any comments or suggestions?</p>
+                    <textarea type="text" 
+                              name="comment" 
+                              id="comment" 
+                              class="input-textarea  " 
+                              placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div class="submit-button">
+                    <input type="submit" id="submit" name="submit" class="submit" value="Submit">
+                </div>
+            </form>
+        </body>
+    </main>
+</html>
